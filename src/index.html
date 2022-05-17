@@ -70,19 +70,147 @@
                 </li>
             </ul>
         </header>
-        <main>
-            <div>
-                <div>
-                    <h1>Автошкола
+        <main class="main">
+            <div class="main__info info">
+                <div class="info__container">
+                    <h1 class="info__title">Автошкола
                         в Санкт-Петербурге
                     </h1>
-                    <span>Проходите обучение как вам удобно — в группе выходного дня, по вечерам или онлайн</span>
-                    <button>Записаться</button>
+                    <span class="info__text">Проходите обучение как вам удобно — в группе выходного дня,
+                        по вечерам или онлайн</span>
+                    <button class="info__button">Записаться</button>
                 </div>
             </div>
-            <div>
+            <div class="main__marquee">
                 бегущая строка
             </div>
+            <div class="main__branches branches">
+                <h2 class="branches__title">Наши филиалы</h2>
+                <div class="branches__container">
+                    <div class="branches__buttons">
+                        <button class="branches__button branches__button--active">Учебные классы</button>
+                        <button class="branches__button">Автодром</button>
+                    </div>
+                    <ul class="branches__list">
+                        <li class="branches__item">Пр. Первый, 31–1</li>
+                        <li class="branches__item">Ул. Вторая, 5–1</li>
+                        <li class="branches__item">Пр. Третий, 11–1</li>
+                        <li class="branches__item">Ул. Четвертая, 22–1</li>
+                    </ul>
+                    <!-- <ul>
+                        <li>Ул. Третья, д. 119</li>
+                        <li>Ул. Четвертая, д. 14</li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="main__slider slider">
+                <div class="slider__textContainer">
+                    <div class="slider__backgroundTitle">
+                        <h2 class="slider__title">Наши инструкторы</h2>
+                    </div>
+                    <span class="slider__text">Каждый инструктор имеет свидетельство, предоставляющее право на обучение вождению автотранспортными средствами. Все инструкторы проходят повышение квалификации по программе «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</span>
+                </div>
+                <div class="slider__itcss itcss">
+                    <div class="itcss__wrapper">
+                        <div class="itcss__items">
+                            <div class="itcss__item">
+                            <!-- Контент 1 слайда -->
+                                <div class="itcss__container">
+                                    <span class="itcss__textName">Любимов Игорь
+                                        Юрьевич</span>
+                                    <span class="itcss__text">Стаж вождения с 1996 г.
+                                        Инструктор с 2002 г.</span>
+                                </div>
+                                <div class="itcss__containerImg">
+                                    <div class="itcss__img itcss__img--lubimov"></div>
+                                    <div>
+                                        <ul class="itcss__list">
+                                            <li class="itcss__picture itcss__picture--muravev"></li>
+                                            <li class="itcss__picture itcss__picture--stankevich"></li>
+                                            <li class="itcss__picture itcss__picture--arturin"></li>
+                                        </ul>
+                                        <div class="itcss__number">
+                                            <span class="itcss__numberItem">1</span>
+                                            <span class="itcss__numberText">/4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div class="itcss__container">
+                                    <span class="itcss__textName">Мураев Игорь
+                                        Юрьевич</span>
+                                    <span class="itcss__text">Стаж вождения с 1992 г.
+                                        Инструктор с 2004 г.</span>
+                                </div>
+                                <div class="itcss__containerImg">
+                                    <div class="itcss__img itcss__img--muravev"></div>
+                                    <div>
+                                        <ul class="itcss__list">
+                                            <li class="itcss__picture itcss__picture--stankevich"></li>
+                                            <li class="itcss__picture itcss__picture--arturin"></li>
+                                            <li class="itcss__picture itcss__picture--lubimov"></li>
+                                        </ul>
+                                        <div class="itcss__number">
+                                            <span class="itcss__numberItem">2</span>
+                                            <span class="itcss__numberText">/4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div class="itcss__container">
+                                    <span class="itcss__textName">Станкевич Игорь
+                                        Юрьевич</span>
+                                    <span class="itcss__text">Стаж вождения с 1990 г.
+                                        Инструктор с 1999 г.</span>
+                                </div>
+                                <div class="itcss__containerImg">
+                                    <div class="itcss__img itcss__img--stankevich"></div>
+                                    <div>
+                                        <ul class="itcss__list">
+                                            <li class="itcss__picture itcss__picture--arturin"></li>
+                                            <li class="itcss__picture itcss__picture--lubimov"></li>
+                                            <li class="itcss__picture itcss__picture--muravev"></li>
+                                        </ul>
+                                        <div class="itcss__number">
+                                            <span class="itcss__numberItem">3</span>
+                                            <span class="itcss__numberText">/4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div class="itcss__container">
+                                    <span class="itcss__textName">Артурин Игорь
+                                        Юрьевич</span>
+                                    <span class="itcss__text">Стаж вождения с 2000 г.
+                                        Инструктор с 2010 г.</span>
+                                </div>
+                                <div class="itcss__containerImg">
+                                    <div class="itcss__img itcss__img--arturin"></div>
+                                    <div>
+                                        <ul class="itcss__list">
+                                            <li class="itcss__picture itcss__picture--lubimov"></li>
+                                            <li class="itcss__picture itcss__picture--muravev"></li>
+                                            <li class="itcss__picture itcss__picture--stankevich"></li>
+                                        </ul>
+                                        <div class="itcss__number">
+                                            <span class="itcss__numberItem">4</span>
+                                            <span class="itcss__numberText">/4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                        <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                        <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a> 
+                </div>
+            </div>
+            <div>Блок с вопросами</div>
+            <div>карта</div>
+            <div>связь</div>
         </main>
         <footer>
 

@@ -1,0 +1,315 @@
+.info {
+    height: 550px;
+    display: flex;
+    position: relative;
+}
+
+.info::before {
+    content: "";
+    background: #2B8E53;
+    border-radius: 0px 10px 0px 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    width: 725px;
+    height: 460px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.info::after {
+    content: "";
+    position: absolute;
+    background-image: url('/src/img/car.png');
+    width: 646px;
+    height: 351px;
+    right: 155px;
+    bottom: 17px;
+}
+
+.info__container {
+    display: flex;
+    margin-top: 145px;
+    margin-left: 315px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.info__title {
+    margin: 0;
+    font-family: "Inter-Bolt";
+    font-size: 50px;
+    white-space: pre-line;
+}
+
+.info__text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    width: 530px;
+}
+
+.info__button {
+    width: 190px;
+    height: 49px;
+    background: #FF574D;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: "inter-Bolt";
+}
+
+.main__marquee {
+    display: flex;
+    background-color: black;
+    height: 76px;
+}
+
+.branches {
+    width: 1290px;
+    height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 150px;
+}
+
+.branches__title {
+    margin: 0;
+    margin-bottom: 70px;
+    font-family: 'Inter-Bolt';
+    font-size: 50px;
+    text-align: center;
+}
+
+.branches__container {
+    background: #F1F1F1;
+    border-radius: 10px;
+    height: 305px;
+}
+
+.branches__buttons {
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.branches__button {
+    width: 190px;
+    height: 49px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Inter-Bolt';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #101010;
+    padding: 0;
+    border: none;
+    margin-top: 70px;
+}
+
+.branches__button--active {
+    background: #2B8E53;
+    color: #F1F1F1;
+}
+
+.branches__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0px;
+    margin-top: 40px;
+    width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.branches__item {
+    width: 260px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    font-size: 20px;
+    font-family: 'inter-Bolt';
+}
+
+.branches__item::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 33px;
+    background-image: url('/src/img/mark.svg');
+    top: 0px;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+}
+
+.slider__backgroundTitle {
+    width: 660px;
+    height: 210px;
+    background-color: #2B8E53;
+    display: flex;
+}
+
+.slider__title {
+    font-family: 'Inter-Bolt';
+    font-size: 50px;
+    color: #FFFFFF;
+    width: 363px;
+    margin-top: 40px;
+    margin-left: 280px;
+}
+
+.slider__text {
+    width: 630px;
+    margin-top: 70px;
+    margin-left: 278px;
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+    display: block;
+}
+
+.itcss {
+    position: absolute;
+    left: 660px;
+}
+
+.itcss__item {
+    display: flex;
+}
+
+.itcss__container {
+    width: 280px;
+    height: 210px;
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.itcss__textName {
+    white-space: pre-line;
+    font-family: 'Inter-Bolt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #101010;
+    text-align: center;
+    margin-top: 42px;
+}
+
+.itcss__text {
+    white-space: pre-line;
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #373737;
+    margin-top: 20px;
+}
+
+.itcss__img {
+    width: 300px;
+    height: 385px;
+    border-radius: 0px 10px 10px 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.itcss__img--lubimov {
+    background-image: url('/src/img/humanOne.jpg');
+}
+
+.itcss__img--muravev {
+    background-image: url('/src/img/muraev.jpg');
+}
+
+.itcss__img--stankevich {
+    background-image: url('/src/img/stankevich.jpg');
+}
+
+.itcss__img--arturin {
+    background-image: url('/src/img/arturin.jpg');
+}
+
+.itcss__containerImg {
+    display: flex;
+}
+
+.itcss__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.itcss__list::before {
+    content: '';
+    width: 646px;
+    height: 132px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 148px;
+    right: 14px;
+    z-index: -1;
+}
+
+.itcss__picture {
+    width: 190px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.itcss__picture--lubimov {
+    background-image: url('/src/img/humanOne.jpg');
+}
+
+.itcss__picture--muravev {
+    background-image: url('/src/img/muraev.jpg');
+}
+
+.itcss__picture--stankevich {
+    background-image: url('/src/img/stankevich.jpg');
+}
+
+.itcss__picture--arturin {
+    background-image: url('/src/img/arturin.jpg');
+}
+
+.itcss__number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.itcss__numberItem {
+    font-family: 'Inter-Bolt';
+    font-size: 30px;
+    color: #FF574D;
+}
+
+.itcss__numberText {
+    font-family: 'Inter-bolt';
+    font-size: 20px;
+    color: #101010;
+}
