@@ -313,3 +313,205 @@
     font-size: 20px;
     color: #101010;
 }
+
+.questions {
+    margin-top: 150px;
+    position: relative;
+}
+
+.questions__background {
+    background: #2B8E53;
+    border-radius: 0px 10px 10px 0px;
+    width: 1058px;
+    height: 768px;
+    display: flex;
+}
+
+.questions__background::before {
+    content: "";
+    width: 674px;
+    height: 340px;
+    position: absolute;
+    background-image: url('/src/img/volkswagen.png');
+    left: 131px;
+    top: 335px;
+}
+
+.questions__title {
+    font-family: 'Inter-Bolt';
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-top: 70px;
+    margin-left: 315px;
+    width: 440px;
+}
+
+.questions__slider {
+    top: 70px;
+    left: 865px;
+    height: 698px;
+    max-width: 770px;
+}
+
+.questions__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.questions__item {
+    width: 740px;
+    background: #F1F1F1;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+.questions__item::before {
+    content: "";
+    background-image: url('/src/img/open.svg');
+    width: 29px;
+    height: 14px;
+    background-repeat: no-repeat;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+.questions__text {
+    font-family: 'Inter-Bolt';
+    font-size: 20px;
+    line-height: 130%;
+    color: #101010;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 651px;
+}
+
+.questions__prev {
+    left: 414px;
+    top: 637px;
+}
+
+.questions__next {
+    left: 514px;
+    top: 637px;
+}
+
+.map {
+    margin-top: 150px;
+}
+
+.map__title {
+    text-align: center;
+    font-family: 'Inter-Bolt';
+    font-size: 50px;
+    color: #000000;
+    margin: 0;
+}
+
+.map__container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+}
+
+.connection {
+    position: relative;
+    margin-top: 150px;
+}
+
+.connection__background {
+    width: 1372px;
+    height: 515px;
+    background: #2B8E53;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+}
+
+.connection__background::after {
+    content: '';
+    width: 971px;
+    height: 385px;
+    position: absolute;
+    background-image: url('/src/img/carConnection.png');
+    background-repeat: no-repeat;
+    top: 175px;
+    left: 136px;
+}
+
+.connection__title {
+    font-family: 'Inter-Bolt';
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-left: 320px;
+    margin-top: 70px;
+}
+
+.connection__form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #F1F1F1;
+    border-radius: 10px 10px 0px 0px;
+    top: 50px;
+    left: 1195px;
+    width: 481px;
+    height: 465px;
+    padding-left: 70px;
+}
+
+.connection__text {
+    margin-top: 70px;
+    font-family: 'Inter-Bolt';
+    font-size: 30px;
+    line-height: 130%;
+    color: #101010;
+    width: 341px;
+    margin-bottom: 40px;
+}
+
+.connection__input {
+    border: none;
+    border-bottom: 2px solid #989898;
+    width: 340px;
+    height: 29px;
+    margin-bottom: 20px;
+    background-color: #F1F1F1;
+    font-family: 'Inter-Bolt';
+    font-size: 16px;
+}
+
+.connection__label {
+    width: 330px;
+    height: 20px;
+}
+
+.connection__span {
+    font-family: 'Inter-bolt';
+    font-size: 13px;
+    color: #373737;
+}
+
+.connection__link {
+    font-family: 'Inter-Bolt';
+    font-size: 13px;
+    color: #2B8E53;
+    text-decoration: none;
+}
+
+.connection__button {
+    margin-top: 40px;
+    background: #FF574D;
+    border-radius: 10px;
+    width: 190px;
+    height: 49px;
+    font-family: 'Inter-Bolt';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+}

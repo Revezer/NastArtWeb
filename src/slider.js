@@ -508,7 +508,17 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     // инициализация слайдера
-    new ItcSimpleSlider('.itcss', {
+    new ItcSimpleSlider('#slider-1', {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: false,
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // инициализация слайдера
+    new ItcSimpleSlider('#slider-2', {
       loop: true,
       autoplay: false,
       interval: 5000,

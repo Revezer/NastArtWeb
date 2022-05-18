@@ -110,7 +110,7 @@
                     </div>
                     <span class="slider__text">Каждый инструктор имеет свидетельство, предоставляющее право на обучение вождению автотранспортными средствами. Все инструкторы проходят повышение квалификации по программе «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</span>
                 </div>
-                <div class="slider__itcss itcss">
+                <div class="slider__itcss itcss" id="slider-1">
                     <div class="itcss__wrapper">
                         <div class="itcss__items">
                             <div class="itcss__item">
@@ -204,13 +204,80 @@
                             </div>
                     </div>
                     </div>
-                        <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
-                        <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a> 
+                    <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a> 
                 </div>
             </div>
-            <div>Блок с вопросами</div>
-            <div>карта</div>
-            <div>связь</div>
+            <div class="main__questions questions">
+                <div class="questions__background">
+                    <h2 class="questions__title">Часто задаваемые вопросы</h2>
+                </div>
+                <div class="questions__slider itcss" id="slider-2">
+                    <div class="itcss__wrapper">
+                        <div class="itcss__items">
+                            <div class="itcss__item questions__items">
+                                <div class="questions__item">
+                                    <span class="questions__text">Если прописка не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены в этом городе?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">Какие документы нужны для поступления?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">На каких автомобилях проходит обучение?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">Можно ли заниматься теорией и практикой в разных филиалах?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">С какого возраста я могу приступить к обучение и сдавать экзамен в ГИБДД на получение водительского удостоверения?</span>
+                                </div>
+                            </div>
+                            <div class="itcss__item questions__items">
+                                <div class="questions__item">
+                                    <span class="questions__text">Если прописка не в Санкт-Петербурге?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">Какие документы?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">На каких автомобилях?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">Можно ли заниматься?</span>
+                                </div>
+                                <div class="questions__item">
+                                    <span class="questions__text">С какого возраста я могу приступить?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="itcss__control itcss__control_prev questions__prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="itcss__control itcss__control_next questions__next" href="#" role="button" data-slide="next"></a> 
+                </div>
+            </div>
+            <div class="main__map map">
+                <h2 class="map__title">Как нас найти</h2>
+                <div class="map__container">
+                    <span>кастомный выподающий список</span>
+                    <iframe class="map__card" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc7437b237fc048d85fd930be4c31d27aa246e15fa66bee6a4f1230d4906ee76&amp;source=constructor" width="1280" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="main__connection connection">
+                <div class="connection__background">
+                    <h2 class="connection__title">Свяжитесь с нами!</h2>
+                </div>
+                <form class="connection__form">
+                    <h3 class="connection__text">Оставьте свои контактные данные</h3>
+                    <input class="connection__input" type="text">
+                    <input class="connection__input" type="tel">
+                    <label class="connection__label">
+                        <input type="checkbox">
+                        <span class="connection__span">Я согласен</span>
+                        <a class="connection__link" href="#">с политикой конфиденциальности</a>
+                    </label>
+                    <button class="connection__button" type="submit">Отправить заявку</button>
+                </form>
+            </div>
         </main>
         <footer>
 
