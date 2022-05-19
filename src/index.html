@@ -8,9 +8,15 @@
         <header class="header">
             <div class="header__container">
                 <img class="header__logo" alt="Логотип">
-                <!-- <select class="header__select"></select> -->
                 <div class="header__select">
-                    Выберите адрес
+                    <span class="header__select-text">Выберите адрес</span>
+                    <ul class="header__select-list header__select-list--disabled">
+                        <li class="header__select-item">Ул. Первая, 5–1</li>
+                        <li class="header__select-item">Ул. Вторая, 22–1</li>
+                        <li class="header__select-item">Ул. Третья, 119</li>
+                        <li class="header__select-item">Ул. Четвертая, 14</li>
+                        <li class="header__select-item">Пр. Пятый, 11–1</li>
+                    </ul>
                 </div>
                 <div class="header__container-link">
                     <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +31,9 @@
                     <a class="header__link" href="tel:(999) 999–99–99">(999) 999–99–99</a>
                     <a class="header__link" href="tel:(111) 111–11–11">(111) 111–11–11</a>
                 </div>
-                <button class="header__button">Заказать звонок</button>
+                <div class="header__button-gradient">
+                    <button class="header__button">Заказать звонок</button>
+                </div>
             </div>
             <ul class="header__list">
                 <li>
@@ -81,26 +89,26 @@
                     <button class="info__button">Записаться</button>
                 </div>
             </div>
-            <div class="main__marquee">
-                бегущая строка
+            <div class="main__marquee marquee">
+                <span class="marquee__text">Специальные предложения и акции</span>
             </div>
             <div class="main__branches branches">
                 <h2 class="branches__title">Наши филиалы</h2>
                 <div class="branches__container">
                     <div class="branches__buttons">
-                        <button class="branches__button branches__button--active">Учебные классы</button>
-                        <button class="branches__button">Автодром</button>
+                        <button class="branches__button branches__button--active branches__button--class">Учебные классы</button>
+                        <button class="branches__button branches__button--avto">Автодром</button>
                     </div>
-                    <ul class="branches__list">
+                    <ul class="branches__list branches__list--class">
                         <li class="branches__item">Пр. Первый, 31–1</li>
                         <li class="branches__item">Ул. Вторая, 5–1</li>
                         <li class="branches__item">Пр. Третий, 11–1</li>
                         <li class="branches__item">Ул. Четвертая, 22–1</li>
                     </ul>
-                    <!-- <ul>
-                        <li>Ул. Третья, д. 119</li>
-                        <li>Ул. Четвертая, д. 14</li>
-                    </ul> -->
+                    <ul class="branches__list branches__list--width branches__list--disabled branches__list--avto">
+                        <li class="branches__item">Ул. Третья, д. 119</li>
+                        <li class="branches__item">Ул. Четвертая, д. 14</li>
+                    </ul>
                 </div>
             </div>
             <div class="main__slider slider">
@@ -114,7 +122,6 @@
                     <div class="itcss__wrapper">
                         <div class="itcss__items">
                             <div class="itcss__item">
-                            <!-- Контент 1 слайда -->
                                 <div class="itcss__container">
                                     <span class="itcss__textName">Любимов Игорь
                                         Юрьевич</span>
@@ -216,49 +223,99 @@
                     <div class="itcss__wrapper">
                         <div class="itcss__items">
                             <div class="itcss__item questions__items">
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-one">
                                     <span class="questions__text">Если прописка не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены в этом городе?</span>
+                                    <button class="question__button" id="one"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-two">
                                     <span class="questions__text">Какие документы нужны для поступления?</span>
+                                    <button class="question__button" id="two"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-three">
                                     <span class="questions__text">На каких автомобилях проходит обучение?</span>
+                                    <button class="question__button" id="three"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-four">
                                     <span class="questions__text">Можно ли заниматься теорией и практикой в разных филиалах?</span>
+                                    <button class="question__button" id="four"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-five">
                                     <span class="questions__text">С какого возраста я могу приступить к обучение и сдавать экзамен в ГИБДД на получение водительского удостоверения?</span>
+                                    <button class="question__button" id="five"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="itcss__item questions__items">
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-six">
                                     <span class="questions__text">Если прописка не в Санкт-Петербурге?</span>
+                                    <button class="question__button" id="six"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-seven">
                                     <span class="questions__text">Какие документы?</span>
+                                    <button class="question__button" id="seven"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-eight">
                                     <span class="questions__text">На каких автомобилях?</span>
+                                    <button class="question__button" id="eight"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-nine">
                                     <span class="questions__text">Можно ли заниматься?</span>
+                                    <button class="question__button" id="nine"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
-                                <div class="questions__item">
+                                <div class="questions__item questions__item-ten">
                                     <span class="questions__text">С какого возраста я могу приступить?</span>
+                                    <button class="question__button" id="ten"></button>
+                                    <div class="question__container">
+                                        <span class="question__textAnswer">По новому закону для автошколы и ГИБДД не имеет значения прописка, обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами. Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге или Ленинградской области сроком не менее 6 месяцев.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="question__container-control">
+                            <a class="itcss__control itcss__control_prev questions__prev" href="#" role="button" data-slide="prev"></a>
+                            <a class="itcss__control itcss__control_next questions__next" href="#" role="button" data-slide="next"></a> 
+                        </div>
                     </div>
-                    <a class="itcss__control itcss__control_prev questions__prev" href="#" role="button" data-slide="prev"></a>
-                    <a class="itcss__control itcss__control_next questions__next" href="#" role="button" data-slide="next"></a> 
                 </div>
             </div>
             <div class="main__map map">
                 <h2 class="map__title">Как нас найти</h2>
                 <div class="map__container">
-                    <span>кастомный выподающий список</span>
+                    <div class="map__drop-down">
+                        <span class="map__text">Калининский район</span>
+                        <button class="map__button"></button>
+                    </div>
+                    <ul class="map__list">
+                        <li class="map__item">Невский район</li>
+                        <li class="map__item">Выборгский район</li>
+                        <li class="map__item">Приморский район</li>
+                    </ul>
                     <iframe class="map__card" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc7437b237fc048d85fd930be4c31d27aa246e15fa66bee6a4f1230d4906ee76&amp;source=constructor" width="1280" height="400" frameborder="0"></iframe>
                 </div>
             </div>
@@ -279,8 +336,49 @@
                 </form>
             </div>
         </main>
-        <footer>
-
+        <footer class="footer">
+            <img class="footer__logo" alt="Логотип">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Категории</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Филиалы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Преподаватели</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Инструкторы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Наш автопарк</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Наш автодром</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Отзывы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__item-link">Контакты</a>
+                </li>
+            </ul>
+            <span class="footer__text">© 2022 Все права защищены</span>
+            <a class="footer__link footer__link--svg" href="tel:(111) 111–11–11">(111) 111–11–11</a>
+            <a class="footer__link footer__link--margin" href="tel:(999) 999–99–99">(999) 999–99–99</a>
+            <a class="footer__link-mail" href="mailto:info@asp.ru">info@asp.ru</a>
+            <ul class="footer__list-social">
+                <li class="footer__item-social">
+                    <a href="#" class="footer__link-instagram"></a>
+                </li>
+                <li class="footer__item-social">
+                    <a href="#" class="footer__link-vk"></a>
+                </li>
+                <li class="footer__item-social">
+                    <a href="#" class="footer__link-facebook"></a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>

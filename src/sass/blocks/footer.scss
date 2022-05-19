@@ -1,0 +1,104 @@
+.footer {
+    background-color: #373737;
+    height: 421px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    font-family: 'Inter-Bolt';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 320px;
+    margin-top: 130px;
+    width: 120px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    gap: 45px;
+    margin-left: 100px;
+    margin-top: 145px;
+    margin-right: 130px;
+    height: 19px;
+}
+
+.footer__item-link {
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.footer__text {
+    font-family: 'Inter-Regular';
+    font-size: 15px;
+    color: #989898;
+    margin-left: 315px;
+    margin-top: 70px;
+    width: 300px;
+}
+
+.footer__link {
+    font-family: 'Inter-Bolt';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 87px;
+    margin-top: 86px;
+    position: relative;
+}
+
+.footer__link--svg::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url('/src/img/phoneFooter.svg');
+    left: -35px;
+}
+
+.footer__link--margin {
+    margin-left: 9px;
+}
+
+.footer__link-mail {
+    font-family: 'Inter-Bolt';
+    font-size: 30px;
+    color: #2B8E53;
+    margin-left: 71px;
+    margin-top: 79px;
+}
+
+.footer__list-social {
+    display: flex;
+    list-style: none;
+    margin-left: 143px;
+    margin-top: 79px;
+    padding: 0px;
+    gap: 10px;
+}
+
+.footer__link-instagram {
+    width: 40px;
+    height: 40px;
+    background-image: url('/src/img/instagram.svg');
+    display: block;
+}
+
+.footer__link-vk {
+    width: 40px;
+    height: 40px;
+    background-image: url('/src/img/vk.svg');
+    display: block;
+}
+
+.footer__link-facebook {
+    width: 40px;
+    height: 40px;
+    background-image: url('/src/img/fb.svg');
+    display: block;
+}

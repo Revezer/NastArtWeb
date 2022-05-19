@@ -17,6 +17,62 @@
     margin-top: 46px;
     margin-left: 163px;
     font-family: "Inter-Regular";
+    position: relative;
+}
+
+.header__select-text {
+    width: 138px;
+    display: block;
+}
+
+.header__select::before {
+    content: '';
+    width: 14px;
+    height: 20px;
+    position: absolute;
+    background-image: url('/src/img/markHead.svg');
+    left: -20px;
+    top: -1px;
+}
+
+.header__select::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url('/src/img/down.svg');
+    right: -20px;
+    top: 1px;
+}
+
+.header__select-list {
+    position: absolute;
+    width: 225px;
+    height: 179px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    left: -16px;
+    top: 25px;
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.header__select-item {
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+    color: #373737;
+    height: 21px;
+}
+
+.header__select-list--disabled {
+    display: none;
 }
 
 .header__link, .header__link-mail {
@@ -34,19 +90,27 @@
     margin-left: 79.5px;
 }
 
+.header__button-gradient {
+    margin-left: 78px;
+    margin-top: 31px;
+    background-image: linear-gradient(93.62deg, rgba(139, 255, 234, 0.62) 0.49%, rgba(255, 210, 50, 0.62) 40.61%, rgba(189, 255, 50, 0.62) 71.2%, rgba(37, 18, 255, 0.62) 96.78%);
+    border-radius: 10px;
+    width: 190px;
+    height: 49px;
+}
+
 .header__button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 190px;
-    height: 49px;
-    margin-left: 78px;
-    margin-top: 31px;
+    width: 188px;
+    height: 47px;
     background: #FF574D;
     color: #FFFFFF;
     border-radius: 10px;
-    border: 1px solid black;
-    // border-image: linear-gradient(93.62deg, rgba(139, 255, 234, 0.62) 0.49%, rgba(255, 210, 50, 0.62) 40.61%, rgba(189, 255, 50, 0.62) 71.2%, rgba(37, 18, 255, 0.62) 96.78%);
+    border: none;
+    margin-left: 1px;
+    margin-top: 1px;
 }
 
 .header__list {

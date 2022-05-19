@@ -1,0 +1,21 @@
+@-webkit-keyframes animMarqueeRtl {
+    0% {
+        -webkit-transform: translateX(300%);
+        transform: translateX(300%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animMarqueeRtl {
+    0% {
+        -webkit-transform: translateX(300%);
+        transform: translateX(300%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
