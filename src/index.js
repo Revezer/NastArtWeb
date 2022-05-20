@@ -54,33 +54,28 @@ buttons.addEventListener('click', (event) => {
     }
 })
 
-const questionsButtons = document.querySelectorAll('.question__button')
+const questionsButtons = document.querySelectorAll('.questions__button')
 
 const onClickQuestionButton = () => {
     questionsButtons.forEach(button => {
         let buttonActive = false
         let activeItem = document.querySelector(".questions__item-" + button.id)
-        let activeButton = activeItem.querySelector(".question__button")
-        let activeText = activeItem.querySelector('.question__container')
+        let activeButton = activeItem.querySelector(".questions__button")
+        let activeText = activeItem.querySelector('.questions__container')
         button.addEventListener('click', () => {
             if (buttonActive === false) {
                 activeItem.classList.add('questions__item--active')
-                activeButton.classList.add('question__button--active')
-                activeText.classList.add('question__container--active')
+                activeButton.classList.add('questions__button--active')
+                activeText.classList.add('questions__container--active')
                 buttonActive = true
-            } else if (buttonActive) {
+            } 
+            else if (buttonActive) {
                 activeItem.classList.remove('questions__item--active')
-                activeButton.classList.remove('question__button--active')
-                activeText.classList.remove('question__container--active')
+                activeButton.classList.remove('questions__button--active')
+                activeText.classList.remove('questions__container--active')
                 buttonActive = false
             }
         })
-        document.addEventListener('click', () => {
-            activeItem.classList.remove('questions__item--active')
-            activeButton.classList.remove('question__button--active')
-            activeText.classList.remove('question__container--active')
-            buttonActive = false
-        }, true)
     });
 }
 
