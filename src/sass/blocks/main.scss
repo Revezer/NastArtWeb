@@ -68,6 +68,10 @@ body {
     font-family: "inter-Bolt";
 }
 
+.info__button:hover {
+    background: #D34137;
+}
+
 .main__marquee {
     display: flex;
     background-color: black;
@@ -551,11 +555,89 @@ body {
     font-family: 'Inter-Regular';
     font-size: 16px;
     color: #373737;
+    cursor: url('/src/img/Pointer.svg'), pointer;
+}
+
+.map__item:hover {
+    color: #2B8E53;
 }
 
 .map__card {
     border-radius: 10px;
     margin-top: 30px;
+}
+
+.map__info {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    right: 120px;
+    top: 86px;
+    width: 290px;
+    height: 323px;
+}
+
+.map__info-title {
+    font-family: 'Inter-Bolt';
+    font-size: 20px;
+    color: #101010;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.map__items {
+    list-style: none;
+    padding-left: 30px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.map__info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.map__info-item--border {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.map__info-text {
+    font-family: 'Inter-Bolt';
+    font-size: 16px;
+    color: #2B8E53;
+    margin-bottom: 10px;
+}
+
+.map__info-span {
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+    color: #373737;
+}
+
+.map__info-button {
+    font-family: 'Inter-Bolt';
+    font-size: 16px;
+    color: #373737;
+    border: none;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    display: flex;
+    position: relative;
+    width: 114px;
+}
+
+.map__info-button::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('/src/img/downPlan.svg');
+    right: 0px;
+    top: 3px;
 }
 
 .connection {
@@ -624,8 +706,42 @@ body {
     font-size: 16px;
 }
 
+.connection__input:focus {
+    color: #2B8E53;
+    border-color: #2B8E53;
+    outline: none;
+}
+
+.connection__input::placeholder {
+    font-size: 15px;
+    color: #989898;
+}
+
 .connection__label {
-    width: 330px;
+    width: 350px;
+    height: 20px;
+}
+
+.connection__checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.connection__checkbox::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2B8E53;
+    bottom: -7px;
+}
+
+.connection__checkbox:checked::before {
+    background-image: url('/src/img/on.svg');
+    width: 20px;
     height: 20px;
 }
 
@@ -633,6 +749,7 @@ body {
     font-family: 'Inter-bolt';
     font-size: 13px;
     color: #373737;
+    margin-left: 30px;
 }
 
 .connection__link {
@@ -652,4 +769,8 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     border: none;
+}
+
+.connection__button:hover {
+    background: #D34137;
 }

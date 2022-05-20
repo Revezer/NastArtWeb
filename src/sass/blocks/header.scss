@@ -1,3 +1,11 @@
+a {
+    cursor: url('/src/img/Pointer.svg'), pointer;
+}
+
+button {
+    cursor: url('/src/img/Pointer.svg'), pointer;
+}
+
 .header__container {
     background: #F1F1F1;
     min-height: 111px;
@@ -23,6 +31,7 @@
 .header__select-text {
     width: 138px;
     display: block;
+    cursor: url('/src/img/Pointer.svg'), pointer;
 }
 
 .header__select::before {
@@ -33,6 +42,7 @@
     background-image: url('/src/img/markHead.svg');
     left: -20px;
     top: -1px;
+    cursor: url('/src/img/Pointer.svg'), pointer;
 }
 
 .header__select::after {
@@ -43,6 +53,7 @@
     background-image: url('/src/img/down.svg');
     right: -20px;
     top: 1px;
+    cursor: url('/src/img/Pointer.svg'), pointer;
 }
 
 .header__select-list {
@@ -69,6 +80,11 @@
     font-size: 16px;
     color: #373737;
     height: 21px;
+    cursor: url('/src/img/Pointer.svg'), pointer;
+}
+
+.header__select-item:hover {
+    color: #2B8E53;
 }
 
 .header__select-list--disabled {
@@ -113,16 +129,24 @@
     margin-top: 1px;
 }
 
+.header__button:hover {
+    background: #D34137;
+}
+
 .header__list {
     list-style: none;
     display: flex;
     width: 1290px;
     justify-content: space-between;
     padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    width: 1290px;
+    height: 69px;
+    margin: 0;
+    padding-left: 315px;
+    padding-right: 315px;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+
 }
 
 .header__item {
@@ -130,4 +154,8 @@
     text-decoration: none;
     font-family: "Inter-Regular";
     font-size: 16px;
+}
+
+.header__item:hover {
+    color: #2B8E53;
 }

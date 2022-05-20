@@ -75,6 +75,10 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .itcss__control_prev:hover {
+    background-image: url('/src/img/redArrowL.svg');
+  }
   
   .itcss__control_next {
     position: absolute;
@@ -85,6 +89,10 @@
     background-image: url('/src/img/arrowR.svg');
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .itcss__control_next:hover {
+    background-image: url('/src/img/redArrowR.svg');
   }
   
   /* .itcss__control::before {

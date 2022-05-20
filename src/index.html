@@ -316,6 +316,21 @@
                         <li class="map__item">Выборгский район</li>
                         <li class="map__item">Приморский район</li>
                     </ul>
+                    <div class="map__info">
+                        <h2 class="map__info-title">Учебные классы</h2>
+                        <ul class="map__items">
+                            <li class="map__info-item map__info-item--border">
+                                <span class="map__info-text">Пр. Культуры, д. 31, к.1</span>
+                                <span class="map__info-span">С 12:30 до 19:00 по будням</span>
+                                <button class="map__info-button">План входа</button>
+                            </li>
+                            <li class="map__info-item">
+                                <span class="map__info-text">Ул. Ушинского, д. 5, к.1</span>
+                                <span class="map__info-span">С 12:30 до 19:30 по будням</span>
+                                <button class="map__info-button">План входа</button>
+                            </li>
+                        </ul>
+                    </div>
                     <iframe class="map__card" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc7437b237fc048d85fd930be4c31d27aa246e15fa66bee6a4f1230d4906ee76&amp;source=constructor" width="1280" height="400" frameborder="0"></iframe>
                 </div>
             </div>
@@ -325,10 +340,10 @@
                 </div>
                 <form class="connection__form">
                     <h3 class="connection__text">Оставьте свои контактные данные</h3>
-                    <input class="connection__input" type="text">
-                    <input class="connection__input" type="tel">
+                    <input class="connection__input" type="text" placeholder="Имя" required>
+                    <input class="connection__input tel" type="tel" placeholder="Телефон" required>
                     <label class="connection__label">
-                        <input type="checkbox">
+                        <input class="connection__checkbox" type="checkbox" required>
                         <span class="connection__span">Я согласен</span>
                         <a class="connection__link" href="#">с политикой конфиденциальности</a>
                     </label>
